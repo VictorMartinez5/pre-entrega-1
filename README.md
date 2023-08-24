@@ -26,9 +26,12 @@ npm run dev
 ```
 
 
-### Challenge Structure :
+### Structure :
 
-La carpeta **controllers** cuenta con los siguiente ficheros  **productManager** y **cartManager**. Estos, a su vez contienen internamente los siguientes métodos respectivamente:
+Contamos con el fichero principal **app**, este se usa para generar un servidor mediante express en el puerto **8080** teniendo como ruta principal **http://localhost:8080/api**
+
+
+La carpeta **controllers** cuenta con los siguiente ficheros  **productManager** y **cartManager**. Estos, a su vez contienen internamente los siguientes métodos respectivamente para el manejo de productos:
 
 **ProductManager.js:**
 ```
