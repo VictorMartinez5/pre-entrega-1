@@ -22,8 +22,8 @@ router.post("/carts", async (req, res) => {
 })
 
 router.post("/carts/:cid/products/:pid", async (req, res) => {
-    const cid = parseInt(req.params.cid)
-    const pid = parseInt(req.params.pid)
+    const cid = req.params.cid
+    const pid = req.params.pid
     const addproductsToCart = await manager.addProductToCart(cid, pid)
     res.send({ status: "success", addproductsToCart })
 })

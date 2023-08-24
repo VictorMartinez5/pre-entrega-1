@@ -1,4 +1,5 @@
 import fs from "fs"
+import { nanoid } from "nanoid"
 
 
 export default class ProductManager {
@@ -30,7 +31,7 @@ export default class ProductManager {
   getProductbyId = async (id) => {
     const { pid } = id
     const allproducts = await this.getProducts({})
-    const found = allproducts.find(element => element.id === parseInt(pid))
+    const found = allproducts.find(element => element.id === pid)
     if (found) {
       return found
     }
@@ -41,19 +42,19 @@ export default class ProductManager {
 
 
 
-  //GENERATE ID 
-  generateId = async () => {
-    if (fs.existsSync(this.path)) {
-      const listproducts = await this.getProducts({})
-      const counter = listproducts.length
-      if (counter == 0) {
-        return 1
-      }
-      else {
-        return (listproducts[counter - 1].id) + 1
-      }
-    }
-  }
+  // //GENERATE ID 
+  // generateId = async () => {
+  //   if (fs.existsSync(this.path)) {
+  //     const listproducts = await this.getProducts({})
+  //     const counter = listproducts.length
+  //     if (counter == 0) {
+  //       return 1
+  //     }
+  //     else {
+  //       return (listproducts[counter - 1].id) + 1
+  //     }
+  //   }
+  // }
   //CREATE
   addProduct = async (obj) => {
     const { title, description, price, thumbnail, category, status = true, code, stock } = obj
@@ -69,7 +70,7 @@ export default class ProductManager {
         return
       }
       else {
-        const id = await this.generateId()
+        const id = nanoid(2)
         const productnew = {
           id, title, description, price, thumbnail, category, status, code, stock
         }
@@ -98,7 +99,7 @@ export default class ProductManager {
       else {
 
         const newProductsList = allproducts.map(elemento => {
-          if (elemento.id === parseInt(pid)) {
+          if (elemento.id === pid) {
             const updatedProduct = {
               ...elemento,
               title, description, price, thumbnail, code, status, category, stock
@@ -124,7 +125,7 @@ export default class ProductManager {
   deleteProduct = async (id) => {
     const { pid } = id
     const allproducts = await this.getProducts({})
-    const productswithoutfound = allproducts.filter(elemento => elemento.id !== parseInt(pid))
+    const productswithoutfound = allproducts.filter(elemento => elemento.id !== pid)
     await fs.promises.writeFile(this.path, JSON.stringify(productswithoutfound, null, 2))
   }
 
