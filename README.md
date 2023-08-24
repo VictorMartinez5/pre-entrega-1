@@ -8,7 +8,7 @@
 ![Consigna parte 4](./consignas/4.png)
 ![Consigna parte 5](./consignas/5.png)
 ![Consigna parte 6](./consignas/6.png)
-![Consigna parte 7](./consignas/7.png)
+
 
 
 ### Run Command : 
