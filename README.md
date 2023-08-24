@@ -1,4 +1,4 @@
-# Curso de Programación Backend CoderHouse Segundo Desafío
+# Curso de Programación Backend CoderHouse
 
 # Consigna
 
