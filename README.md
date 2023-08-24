@@ -15,12 +15,20 @@
 Antes de comenzar ejecutar este comando:
 
 ```sh
-npm i
+npm i //Este comando instalara todas las dependencias usadas en este proyecto 
 ```
-Este comando instalara todas las dependencias usadas en este proyecto 
+
+
+Lo siguiente sera iniciar el servidor con:
+
+```sh
+npm run dev 
+```
+
+
 ### Challenge Structure :
 
-La fichero **controllers** cuenta con las siguientes clases  **productManager** y **cartManager**. Estos, a su vez contienen internamente los siguientes métodos respectivamente:
+La carpeta **controllers** cuenta con los siguiente ficheros  **productManager** y **cartManager**. Estos, a su vez contienen internamente los siguientes métodos respectivamente:
 
 **ProductManager.js:**
 ```
@@ -29,6 +37,14 @@ La fichero **controllers** cuenta con las siguientes clases  **productManager** 
 - getProductByid
 - updateProduct
 - deleteProduct
+```
+
+**ProductManager.js:**
+```
+- getCarts
+- getCartbyId
+- addCart
+- addProductToCart
 ```
 
 
