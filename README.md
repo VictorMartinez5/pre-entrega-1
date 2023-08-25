@@ -25,11 +25,11 @@ npm run dev
 
 ## Proyect Structure :
 
-**App**
+### App:
 
 Contamos con el fichero principal **app**, este se usa para generar un servidor mediante express en el puerto **8080** teniendo como ruta principal **http://localhost:8080/api**
 
-**Controllers Structure**
+###  Controllers Structure:
 
 La carpeta **controllers** cuenta con los siguiente ficheros **productManager** y **cartManager**. Estos, a su vez contienen internamente los siguientes métodos respectivamente para el manejo de productos:
 
@@ -52,7 +52,7 @@ La carpeta **controllers** cuenta con los siguiente ficheros **productManager** 
 - addProductToCart
 ```
 
-**Models Structure**
+### Models Structure:
 
 En la carpeta **models** contamos con **products.json** **carts.json**. Estos ficheros seran manipulado por los ficheros **productManageer** **cartManager**.
 
@@ -68,7 +68,8 @@ desde los primeros entregables, asegurando que NUNCA se repetirán los ids en el
 -status: Boolean
 -stock: Number
 -category: String
--thumbnails: Array de Strings que contengan las rutas donde están almacenadas las imágenes referentes a -dicho product
+-thumbnails: Array de Strings que contengan las rutas donde están almacenadas las imágenes referentes 
+a -dicho product
 
 ```
 
@@ -82,6 +83,7 @@ desde los primeros entregables, asegurando que NUNCA se repetirán los ids en el
 }
 ```
 
+### Routes Strocture:
 
 
 
