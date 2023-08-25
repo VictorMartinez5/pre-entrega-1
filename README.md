@@ -25,7 +25,11 @@ npm run dev
 
 ### Proyect Structure :
 
+**App**
+
 Contamos con el fichero principal **app**, este se usa para generar un servidor mediante express en el puerto **8080** teniendo como ruta principal **http://localhost:8080/api**
+
+**Controllers Structure**
 
 La carpeta **controllers** cuenta con los siguiente ficheros **productManager** y **cartManager**. Estos, a su vez contienen internamente los siguientes métodos respectivamente para el manejo de productos:
 
@@ -39,7 +43,7 @@ La carpeta **controllers** cuenta con los siguiente ficheros **productManager** 
 - deleteProduct
 ```
 
-**cartManager.js:**
+**cartManager.js structure:**
 
 ```
 - getCarts
