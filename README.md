@@ -23,7 +23,7 @@ Lo siguiente sera iniciar el servidor con:
 npm run dev
 ```
 
-### Proyect Structure :
+## Proyect Structure :
 
 **App**
 
@@ -52,6 +52,8 @@ La carpeta **controllers** cuenta con los siguiente ficheros **productManager** 
 - addProductToCart
 ```
 
+**Models Structure**
+
 En la carpeta **models** contamos con **products.json** **carts.json**. Estos ficheros seran manipulado por los ficheros **productManageer** **cartManager**.
 
 **product.json structure:**
@@ -79,5 +81,7 @@ desde los primeros entregables, asegurando que NUNCA se repetirán los ids en el
 -quantity: Number
 }
 ```
+
+
 
 
