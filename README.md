@@ -53,7 +53,8 @@ En la carpeta **models** contamos con **products.json** **carts.json**. Estos fi
 **product.json structure:**
 
 ```
--id: Number/String (A tu elección, el id NO se manda desde body, se autogenera como lo hemos visto desde los primeros entregables, asegurando que NUNCA se repetirán los ids en el archivo).
+-id: Number/String (A tu elección, el id NO se manda desde body, se autogenera como lo hemos visto 
+desde los primeros entregables, asegurando que NUNCA se repetirán los ids en el archivo).
 -title: String,
 -description: String
 -code: String
